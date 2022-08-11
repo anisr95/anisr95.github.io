@@ -1,0 +1,70 @@
+.project {
+  padding: 3em;
+  margin: 0 auto;
+  text-align: center;
+  box-shadow: var(--shadow);
+  transition: transform 0.2s linear;
+  display: flex;
+  justify-content: space-between;
+}
+
+.project:hover {
+  transform: translateY(-7px);
+}
+
+.project__description {
+  margin-top: 1em;
+}
+
+.project__stack {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 1.2em 0;
+}
+
+.project__stack-item {
+  margin: 0.5em;
+  font-weight: 500;
+  font-size: 0.8rem;
+  color: var(--clr-fg-alt);
+}
+
+.project .link--icon {
+  margin-left: 0.5em;
+}
+
+.project__image{
+  height: 400px;
+  width: 600px;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.2s linear;
+}
+
+.project__image:hover{
+  transform: translateY(-7px);
+  transition: transform 0.2s linear;
+  cursor: pointer;
+}
+
+.display{
+  margin-right: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* border: 2px solid red; */
+}
+
+.project__actions{
+  display: flex;
+  justify-content: space-between;
+  /* width: 100px; */
+  /* padding: 2rem; */
+  /* border: 2px solid red; */
+  /* flex: 50%; */
+}
+.git_code{
+  margin-right: 2rem;
+}
