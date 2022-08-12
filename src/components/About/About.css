@@ -7,20 +7,42 @@
 
 .about__name {
   color: var(--clr-primary);
+  
+}
+
+.greeting{
+  animation: title 1.5s forwards;
 }
 
 .about__role {
   margin-top: 1.2em;
+  opacity: 0;
+  animation: title 1.8s forwards 1s;
 }
 
 .about__desc {
   font-size: 1rem;
   max-width: 600px;
+  opacity: 0;
+  animation: title 1.8s forwards 1.3s;
 }
 
 .about__desc,
 .about__contact {
   margin-top: 2.4em;
+}
+
+/* .about__contact{
+  border: 2px solid green;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+} */
+
+.link--icon{
+  transform: translateY(3px);
 }
 
 .about .link--icon {
@@ -43,5 +65,34 @@
   }
   .about__name{
     display: block;
+  }
+}
+
+.action__links{
+  /* text-align: center; */
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  animation: appear 2s forwards 3s;
+}
+
+@keyframes title {
+  0%{
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+@keyframes appear {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
   }
 }
