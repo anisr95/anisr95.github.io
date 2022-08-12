@@ -12,6 +12,7 @@
 
 .greeting{
   animation: title 1.5s forwards;
+  opacity: 0;
 }
 
 .about__role {
