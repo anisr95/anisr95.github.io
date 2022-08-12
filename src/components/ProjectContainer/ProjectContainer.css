@@ -68,3 +68,20 @@
 .git_code{
   margin-right: 2rem;
 }
+
+@media (max-width: 900px) {
+  .project__image{
+    height: 400px;
+    width: 100%;
+    margin-top: 3rem;
+    object-position: top center;
+  }
+  .display{
+    display: block;
+  }
+  .project{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

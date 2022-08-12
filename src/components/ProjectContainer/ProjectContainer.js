@@ -20,36 +20,36 @@ const ProjectContainer = ({ project }) => (
         </ul>
       )}
       
-    {/* </div> */}
-    <div className='project__actions'>
+      {/* </div> */}
+      <div className='project__actions'>
 
-    
-    {project.sourceCode && (
-      <a
-        href={project.sourceCode}
-        aria-label='source code'
-        className='git_code'
-        target="_blank" rel="noopener noreferrer"
-      >
-        <span type='button' className='btn btn--outline'>
-              Source Code
-            </span>
-      </a>
-    )}
+      
+      {project.sourceCode && (
+        <a
+          href={project.sourceCode}
+          aria-label='source code'
+          className='git_code'
+          target="_blank" rel="noopener noreferrer"
+        >
+          <span type='button' className='btn btn--outline'>
+                Source Code
+              </span>
+        </a>
+      )}
 
-    {project.livePreview && (
-      <a
-        href={project.livePreview}
-        aria-label='live preview'
-        target="_blank" rel="noopener noreferrer"
-        // className='link link--icon'
-      >
-        <span type='button' className='btn btn--outline'>
-              Live
-            </span>
-      </a>
-    )}
-    </div>
+      {project.livePreview && (
+        <a
+          href={project.livePreview}
+          aria-label='live preview'
+          target="_blank" rel="noopener noreferrer"
+          // className='link link--icon'
+        >
+          <span type='button' className='btn btn--outline'>
+                Live
+              </span>
+        </a>
+      )}
+      </div>
     </div>
     {/* <img src='expenseTracker' alt="project-image" /> */}
     <a href={project.livePreview}
